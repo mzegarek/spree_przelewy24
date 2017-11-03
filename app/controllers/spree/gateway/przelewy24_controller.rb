@@ -3,7 +3,7 @@ module Spree
   class Gateway::Przelewy24Controller < Spree::BaseController
     skip_before_action :verify_authenticity_token, :only => [:comeback, :complete]
     include Spree::Core::ControllerHelpers::Order
-    helper 'spree/store'
+    #helper 'spree/store'
 
     # Show form Przelewy24 for pay
     def show
